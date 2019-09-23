@@ -3,11 +3,15 @@ import './App.css';
 
 import Quote from './Quote';
 import Avatar from './Avatar';
+import Quotes from './Quotes';
+import Lamp from './Lamp.js';
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
+				<Lamp />
+				<Lamp />
 				<div style={displaySection}>
 					<Avatar
 						image="https://www.stickees.com/files/cartoon/the-simpsons/2239-bart-simpson-.png"
@@ -42,6 +46,8 @@ class App extends Component {
 					character="Ralph Wiggum"
 					image="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523"
 				/>
+
+				<Quotes />
 			</div>
 		);
 	}

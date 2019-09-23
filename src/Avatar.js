@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Avatar = ({ image, firstName, lastName, children }) => (
-	<div class="container" style={displayContainer}>
-		<div class="row">
-			<div class="col s12">
-				<img src={image} alt="" class="materialboxed responsive-img" />
+	<div className="container" style={displayContainer}>
+		<div className="row">
+			<div className="col s12">
+				<img src={image} alt="" className="materialboxed responsive-img" />
 				<h4 className="white-text">{firstName}</h4>
 				<h4 className="pink-text" style={upperCase}>
 					{lastName}
