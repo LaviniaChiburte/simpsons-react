@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/simpsons-react/static/css/main.de3b2276.chunk.css",
+    "main.js": "/simpsons-react/static/js/main.9e0fb53b.chunk.js",
+    "main.js.map": "/simpsons-react/static/js/main.9e0fb53b.chunk.js.map",
+    "runtime~main.js": "/simpsons-react/static/js/runtime~main.9fcee108.js",
+    "runtime~main.js.map": "/simpsons-react/static/js/runtime~main.9fcee108.js.map",
+    "static/js/2.169b26ee.chunk.js": "/simpsons-react/static/js/2.169b26ee.chunk.js",
+    "static/js/2.169b26ee.chunk.js.map": "/simpsons-react/static/js/2.169b26ee.chunk.js.map",
+    "index.html": "/simpsons-react/index.html",
+    "precache-manifest.b9acf263e055d2f22a104401187b2757.js": "/simpsons-react/precache-manifest.b9acf263e055d2f22a104401187b2757.js",
+    "service-worker.js": "/simpsons-react/service-worker.js",
+    "static/css/main.de3b2276.chunk.css.map": "/simpsons-react/static/css/main.de3b2276.chunk.css.map",
+    "static/media/logo.svg": "/simpsons-react/static/media/logo.5d5d9eef.svg"
+  }
+}
