@@ -1,15 +1,46 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './logo.svg';
 
 import Quote from './Quote';
 import Avatar from './Avatar';
 import Quotes from './Quotes';
 import Lamp from './Lamp.js';
+import Button from '@material-ui/core/Button';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			working: this.props.working
+		};
+	}
+	handleClick = () => {
+		this.setState({ working: !this.state.working });
+	};
+
 	render() {
+		const workingOrNot = this.state.working ? 'App-logo-my-spin' : 'App-logo';
+		const textButton = this.state.working ? 'Working' : 'Break';
+
 		return (
 			<div className="App">
+				<img src={logo} className={workingOrNot} alt="logo" />
+				<Button
+					onClick={this.handleClick}
+					className="buton"
+					color="secondary"
+					variant="contained"
+					size="large"
+				>
+					{textButton}
+				</Button>
+				<Quote
+					quote="I believe the children are the future... Unless we stop them now!"
+					character="Homer Simpson"
+					image="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FHomerSimpson.png?1497567511939"
+				/>
+
 				<Lamp />
 				<Lamp />
 				<div style={displaySection}>
@@ -36,11 +67,6 @@ class App extends Component {
 					<h1 className="App-title">Simpsons Quotes</h1>
 				</header>
 
-				<Quote
-					quote="I believe the children are the future... Unless we stop them now!"
-					character="Homer Simpson"
-					image="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FHomerSimpson.png?1497567511939"
-				/>
 				<Quote
 					quote="Me fail English? That's unpossible"
 					character="Ralph Wiggum"
